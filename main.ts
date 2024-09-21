@@ -7,12 +7,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     Loop = randint(100, 1e+34)
     for (let index = 0; index < Loop; index++) {
         music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
-        textSprite2 = 0
-        textSprite = textsprite.create("UNABLE TO FIND ADDRESS 00")
-        music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
         for (let index = 0; index < randint(1, 999999999999); index++) {
             music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
-            textSprite = textsprite.create("CRASH-CODE")
             music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
             Loop = randint(1000, 1e+236)
             console.log("Not enough memory left")
@@ -20,13 +16,12 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         }
         music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
     }
+    music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
 })
 let bytes = 0
-let textSprite2 = 0
 let Loop = 0
-let textSprite: TextSprite = null
 // Create the text sprite with initial text
-textSprite = textsprite.create("Used Memory: 0")
+let textSprite = textsprite.create("Used Memory: 0")
 // Manually define estimated sprite dimensions
 // Example width; adjust as necessary
 let spriteWidth = 80
