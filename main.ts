@@ -14,13 +14,11 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
             music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
             music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
             music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
-            console.log("Quota Exceeded:" + bytes)
             console.log("Not enough memory left")
         }
         music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
         Loop = randint(1000, 1e+236)
     }
-    music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
 })
 let bytes = 0
 let Loop = 0
