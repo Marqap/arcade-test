@@ -2,11 +2,13 @@ enum RadioMessage {
     message1 = 49434
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    game.splash("Are you sure you want to crash your MakeCode Arcade XL?")
+    game.splash("Are you sure you want to crash your MakeCode Arcade?")
+    music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
     Loop = randint(100, 1e+34)
     for (let index = 0; index < Loop; index++) {
         music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
         for (let index = 0; index < randint(1, 999999999999); index++) {
+            music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
             music.play(music.createSoundEffect(WaveShape.Square, 5000, 5000, 255, 255, 1000, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.InBackground)
             Loop = randint(1000, 1e+236)
             console.log("Not enough memory left")
