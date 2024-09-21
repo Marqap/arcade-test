@@ -21,7 +21,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 let bytes = 0
 let Loop = 0
 // Create the text sprite with initial text
-let textSprite = textsprite.create("Used Memory: 0")
+let textSprite = textsprite.create("Used MBs: 0")
 // Manually define estimated sprite dimensions
 // Example width; adjust as necessary
 let spriteWidth = 80
