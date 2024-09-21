@@ -45,7 +45,7 @@ centerTextSprite(textSprite);
 // Update text sprite every 500 ms
 game.onUpdateInterval(500, function () {
     // Update the text of the existing sprite
-    textSprite.setText("Used Memory: " + bytes)
+    textSprite.setText("Used MBs: " + bytes)
     // Simulate memory usage
     bytes += 1
     // Optional: Scroll background if necessary
