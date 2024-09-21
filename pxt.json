@@ -1,0 +1,37 @@
+{
+    "name": "Arcade Test",
+    "description": "",
+    "dependencies": {
+        "device": "*",
+        "arcade-text": "github:microsoft/arcade-text#v1.3.0",
+        "multiplayer": "*",
+        "sevenseg": "*",
+        "pxt-button-combos": "github:jwunderl/pxt-button-combos#v0.0.24",
+        "mouse": "*",
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.3",
+        "pxt-tick-event": "github:microsoft/pxt-tick-event#v0.2.0",
+        "Timers": "github:microsoft/arcade-timers#v1.1.0",
+        "arcade-background-scroll": "github:microsoft/arcade-background-scroll#v0.1.2",
+        "radio-broadcast": "*",
+        "arcade-sprite-data": "github:microsoft/arcade-sprite-data#v0.2.1",
+        "Makey Makey Keymappings": "github:joylabz/makeymakey-makecode-arcade-extension#1.0.3",
+        "Turtle Logo": "github:mr-coxall/turtle-logo#v1.0.0"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "1.12.56",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
